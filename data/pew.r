@@ -1,14 +1,16 @@
 library(foreign)
 library(stringr)
 library(plyr)
+install.packages("dplyr")
+library(dplyr)
 library(reshape2)
-source("xtable.r")
+source("/Users/kedarpatil/Documents/St-4701 - Data Visualization/tidy-data/data/xtable.r")
 
 # Data from http://pewforum.org/Datasets/Dataset-Download.aspx
 
 # Load data -----------------------------------------------------------------
 
-pew <- read.spss("pew.sav")
+pew <- read.spss("/Users/kedarpatil/Documents/St-4701 - Data Visualization/tidy-data/data/pew.sav")
 pew <- as.data.frame(pew)
 
 
